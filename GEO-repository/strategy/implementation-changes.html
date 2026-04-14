@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Реализация: какие изменения дают рост AI‑видимости (соцсети, статьи, код продукта)</title>
+    <meta
+      name="description"
+      content="Какие изменения мы внедряем для AEO/GEO: соцсети, статьи и правки в коде digital‑продукта. Для кода — структура answer‑first, schema.org, FAQ, таблицы критериев, внутренние ссылки, скорость и доступность."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Jura:wght@300..700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="canonical" href="/strategy/implementation-changes.html" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="../index.html" class="logo">
+          <img src="../Img/logo-aeo.png" alt="AEO logo" class="logo-image" />
+        </a>
+        <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </header>
+
+    <div class="drawer-backdrop" data-drawer-close hidden></div>
+    <aside class="mobile-drawer" id="site-drawer" aria-label="Меню" aria-hidden="true">
+      <div class="mobile-drawer__header">
+        <span class="mobile-drawer__title">Меню</span>
+        <button class="mobile-drawer__close" type="button" data-drawer-close aria-label="Закрыть меню">×</button>
+      </div>
+      <nav class="drawer-nav" aria-label="Навигация сайта">
+        <details class="nav-dd" open>
+          <summary>Методы</summary>
+          <div class="nav-dd-panel" role="menu">
+            <a role="menuitem" href="../methods/methods-guide.html">Методы продвижения — обзор</a>
+            <a role="menuitem" href="../methods/geo.html">GEO оптимизация</a>
+            <a role="menuitem" href="../methods/aeo.html">AEO оптимизация</a>
+            <a role="menuitem" href="../methods/seo.html">SEO оптимизация</a>
+            <a role="menuitem" href="../methods/aio.html">AIO оптимизация</a>
+            <a role="menuitem" href="../methods/ai-smm.html">AI &amp; SMM стратегии</a>
+            <a role="menuitem" href="../methods/faq-methods.html">FAQ по методам</a>
+          </div>
+        </details>
+
+        <details class="nav-dd" open>
+          <summary>Нейроплатформы</summary>
+          <div class="nav-dd-panel" role="menu">
+            <a role="menuitem" href="../neural-platforms/chatgpt.html">ChatGPT</a>
+            <a role="menuitem" href="../neural-platforms/perplexity.html">Perplexity</a>
+            <a role="menuitem" href="../neural-platforms/deepseek.html">DeepSeek</a>
+            <a role="menuitem" href="../neural-platforms/yandex-alice.html">Яндекс Алиса</a>
+            <a role="menuitem" href="../neural-platforms/platform-comparison.html">Сравнение платформ</a>
+          </div>
+        </details>
+
+        <details class="nav-dd" open>
+          <summary>Инструменты</summary>
+          <div class="nav-dd-panel" role="menu">
+            <a role="menuitem" href="../tools/analytics.html">Аналитика и аудит</a>
+            <a role="menuitem" href="../tools/content-factory.html">Контент‑завод</a>
+          </div>
+        </details>
+
+        <details class="nav-dd" open>
+          <summary>Стратегия</summary>
+          <div class="nav-dd-panel" role="menu">
+            <a role="menuitem" href="overview.html">Общий обзор</a>
+            <a role="menuitem" href="unified-system.html">Единая система</a>
+            <a role="menuitem" href="ai-contextual.html">AI и контекст</a>
+          </div>
+        </details>
+
+        <details class="nav-dd" open>
+          <summary>Отрасли</summary>
+          <div class="nav-dd-panel" role="menu">
+            <a role="menuitem" href="../case-studies/all-industries-geo-aeo.html">Все отрасли и нейропоиск</a>
+            <a role="menuitem" href="../case-studies/marketplaces-neuro-strategy.html">Маркетплейсы</a>
+            <a role="menuitem" href="../case-studies/clinics-neuro-strategy.html">Клиники</a>
+            <a role="menuitem" href="../case-studies/service-centers-neuro-strategy.html">Сервисные центры</a>
+            <a role="menuitem" href="../case-studies/showrooms-neuro-strategy.html">Шоурумы</a>
+            <a role="menuitem" href="../case-studies/beauty-neuro-strategy.html">Салоны красоты</a>
+            <a role="menuitem" href="../case-studies/delivery-neuro-strategy.html">Доставка</a>
+            <a role="menuitem" href="../case-studies/corporations.html">Кейсы больших корпораций</a>
+            <a role="menuitem" href="../case-studies/ecommerce.html">Кейсы e‑commerce</a>
+            <a role="menuitem" href="../case-studies/saas.html">Кейсы SaaS и digital</a>
+            <a role="menuitem" href="../case-studies/local-business.html">Кейсы локального бизнеса</a>
+            <a role="menuitem" href="../case-studies/ai-discovery.html">AI‑discovery лидеры</a>
+          </div>
+        </details>
+
+        <a class="drawer-link" href="../blog/main.html">БЛОГ</a>
+      </nav>
+    </aside>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h1>Реализация: какие изменения внедряем</h1>
+            <p class="section-subtitle">
+              Изменения бывают разными: соцсети, статьи и правки в продукте. Цель — сделать бренд “понятным” для AI и удобным для
+              выбора: критерии, факты, доказательства, структура ответов.
+            </p>
+          </div>
+
+          <article class="content-article">
+            <h2>1) Соцсети: когда это работает</h2>
+            <ul>
+              <li><strong>Нужно закрепить темы</strong>: продуктовые сценарии, типовые вопросы, разбор кейсов.</li>
+              <li><strong>Нужно “социальное доказательство”</strong>: отзывы, UGC, демонстрация использования.</li>
+              <li><strong>Нужно быстро тестировать месседжи</strong>: формулировки, которые потом переносятся в сайт/статьи.</li>
+            </ul>
+            <p class="content-note">Важно: соцсети без “базы” (сайт/страницы продукта) редко дают стабильный эффект в рекомендациях AI.</p>
+
+            <h2>2) Статьи: что именно мы делаем</h2>
+            <ul>
+              <li><strong>Answer‑first</strong>: ответ в первые 2–4 строки, дальше — пояснение.</li>
+              <li><strong>Таблицы критериев</strong>: “как выбрать” и “сравнение вариантов” (это любимый формат LLM).</li>
+              <li><strong>FAQ</strong>: вопросы, которые реально задают (и которые AI “подхватывает”).</li>
+              <li><strong>Доказательства</strong>: цифры, примеры, кейсы, источники.</li>
+              <li><strong>Перелинковка</strong>: связываем статьи с методами, инструментами и страницами продукта.</li>
+            </ul>
+
+            <h2>3) Изменения в коде digital‑продукта (AEO/GEO)</h2>
+            <p>
+              “Про код” — это не только скорость. Это структура, доступность и машиночитаемые сущности, которые помогают AI правильно
+              понять продукт, фичи, ограничения и правила выбора.
+            </p>
+
+            <h3>Что обычно меняем в разметке и структуре</h3>
+            <ul>
+              <li><strong>Сущности на странице</strong>: явные названия, версии, цены, регионы, условия, ограничения.</li>
+              <li><strong>Единые термины</strong>: чтобы AI не путал одно и то же разными словами на разных страницах.</li>
+              <li><strong>Компоненты “быстрых ответов”</strong>: блок “короткий ответ”, шаги, критерии, примеры.</li>
+              <li><strong>FAQ + структурированные данные</strong>: когда это уместно.</li>
+              <li><strong>Внутренние ссылки</strong>: “что дальше читать”, “как сравнить”, “как внедрить”.</li>
+            </ul>
+
+            <h3>Schema.org и микроразметка (минимальный набор)</h3>
+            <div class="content-table" role="region" aria-label="Микроразметка для AEO/GEO: что ставить">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Тип</th>
+                    <th>Когда нужен</th>
+                    <th>Эффект</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Organization</td>
+                    <td>Страница “о компании”, контакты</td>
+                    <td>Чёткая сущность бренда</td>
+                  </tr>
+                  <tr>
+                    <td>Product / SoftwareApplication</td>
+                    <td>Продукт/сервис/приложение</td>
+                    <td>Понимание характеристик и позиционирования</td>
+                  </tr>
+                  <tr>
+                    <td>FAQPage</td>
+                    <td>Есть реальные вопросы/ответы</td>
+                    <td>Удобно для answer‑first выдач</td>
+                  </tr>
+                  <tr>
+                    <td>Article</td>
+                    <td>Гайды/обзоры/инструкции</td>
+                    <td>Ясная структура материалов</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>Качество и доступность</h3>
+            <ul>
+              <li><strong>Speed & UX</strong>: страница должна быстро открываться и быть читаемой.</li>
+              <li><strong>Доступность</strong>: заголовки по иерархии, alt‑тексты, корректные ссылки.</li>
+              <li><strong>Каноникал / мета</strong>: чтобы AI/поиск понимали “главную” версию страницы.</li>
+            </ul>
+
+            <p class="content-note">
+              Если хотите — используйте раздел <a href="../tools/analytics.html#audit-code-aeo-geo">«Аудит кода под AEO и GEO»</a> на странице «Аналитика и аудит», чтобы пройтись по
+              конкретным пунктам именно на вашем сайте.
+            </p>
+
+            <div class="content-related">
+              <h3>Связанные страницы</h3>
+              <ul>
+                <li><a href="brand-strategy.html">Стратегия: какие площадки подходят</a></li>
+                <li><a href="optimization-tracking.html">Оптимизация: как трекать результат</a></li>
+                <li><a href="../methods/aeo.html">Метод: AEO оптимизация</a></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"></footer>
+    <script src="../script.js"></script>
+  </body>
+</html>
+

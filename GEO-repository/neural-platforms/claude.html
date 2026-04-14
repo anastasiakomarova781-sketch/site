@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Продвижение в Claude (Anthropic) в 2026 — как стать цитируемым источником</title>
+    <meta
+      name="description"
+      content="Claude (Anthropic): как повысить вероятность цитирования и рекомендаций. Страницы‑ответы, доверительные сигналы, кейсы и структура для AI."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Jura:wght@300..700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="canonical" href="/neural-platforms/claude.html" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="../index.html" class="logo">
+          <img src="../Img/logo-aeo.png" alt="GEO logo" class="logo-image" />
+        </a>
+        <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h1>Продвижение в Claude (2026)</h1>
+            <p class="section-subtitle">
+              Цель не “обмануть модель”, а сделать так, чтобы ваш сайт был удобным источником: короткие ответы, факты,
+              доказательства и понятная структура.
+            </p>
+          </div>
+
+          <article class="content-article">
+            <h2 id="claude-chto-eto">Что такое Claude</h2>
+            <p>
+              <strong>Anthropic</strong> (США, корпорация общественного блага — PBC) — компания‑разработчик; <strong>Claude</strong> — её семейство <strong>языковых моделей</strong> и чат‑/API‑продукт с упором на <strong>длинный контекст</strong> и аккуратные формулировки, востребованный в поддержке, аналитике и работе с документами. Для бренда сайт становится кандидатом в источник там, где интерфейс подключает <strong>веб или файлы</strong>; лимиты, модели и правила задаёт <strong>Anthropic</strong> в условиях сервиса и корпоративных договорах.
+            </p>
+
+            <h2 id="claude-auditoriya">Аудитория Claude: цифры и модель</h2>
+            <p class="content-note">
+              Все <strong>доли даны в процентах (%)</strong> от указанной базы (MAU, сессии, запросы). У таблиц — примечания с <strong>источниками</strong>; без публичной разбивки Anthropic используется <strong>модель GEO Hub</strong>.
+            </p>
+            <div class="content-sources" role="region" aria-labelledby="claude-sources-title">
+              <h3 class="content-sources__title" id="claude-sources-title">Источники цифр в этом разделе</h3>
+              <p>
+                <strong>Легенда:</strong> ссылка на <strong>anthropic.com</strong> — первичное сообщение компании о бизнес‑метриках; MAU, география, возраст и динамика в таблицах ниже — <strong>модель GEO Hub</strong> (Anthropic не публикует такую матрицу целиком).
+              </p>
+              <ul class="content-sources__list">
+                <li>
+                  <strong>Публикация (бизнес‑шкала, не MAU чата):</strong> в релизе о раунде Series F (сентябрь 2025) Anthropic указывает, среди прочего, <strong>более 300 000</strong> корпоративных клиентов и динамику выручки —
+                  <a href="https://www.anthropic.com/news/anthropic-raises-series-f-at-usd183b-post-money-valuation" rel="noopener noreferrer">Anthropic — Series F announcement</a>.
+                  Это не то же самое, что «MAU consumer‑чата» в нашей таблице.
+                </li>
+                <li>
+                  <strong>Панель трафика домена (сверка тренда):</strong>
+                  <a href="https://www.similarweb.com/website/claude.ai/" rel="noopener noreferrer">Similarweb — claude.ai</a>
+                  (аудитория сайта по методологии Similarweb; не смешивать с MAU из таблицы).
+                </li>
+                <li>
+                  <strong>MAU, платящие, география, возраст, доходы, динамика, проникновение в РФ</strong> в таблицах — <strong>модель GEO Hub</strong> под B2B/EN‑профиль продукта.
+                </li>
+              </ul>
+            </div>
+            <p class="content-note"><strong>Источники:</strong> редкие публичные комментарии Anthropic; обзоры рынка; оценки трафика; <strong>модель GEO Hub</strong>. Не выгрузка из кабинета Anthropic.</p>
+            <div class="content-table" role="region" aria-label="Claude — масштаб">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Показатель</th>
+                    <th>Значение (ориентир)</th>
+                    <th>Комментарий</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>MAU consumer + API, глобально (модель)</td>
+                    <td><strong>12–28 млн</strong></td>
+                    <td>Существенно меньше «мегачатов»; выше доля корпоративного и dev‑использования.</td>
+                  </tr>
+                  <tr>
+                    <td>Платящие подписчики / seats (модель)</td>
+                    <td><strong>18–32 %</strong> от MAU</td>
+                    <td>Выше конверсия в оплату, чем у среднего free‑чата.</td>
+                  </tr>
+                  <tr>
+                    <td>Доля B2B‑сценариев (документы, отчёты, код)</td>
+                    <td><strong>55–72 %</strong> сессий</td>
+                    <td>Меньше «развлечений», больше работы.</td>
+                  </tr>
+                  <tr>
+                    <td>Английский язык запросов</td>
+                    <td><strong>78–90 %</strong> запросов</td>
+                    <td>Русский — реже и чаще у билингвов.</td>
+                  </tr>
+                  <tr>
+                    <td>Средняя длина сессии, мин (модель)</td>
+                    <td><strong>18–45</strong></td>
+                    <td>Длинные документы и итерации правок.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="content-note"><strong>Источники:</strong> публичной географии у Anthropic мало; проценты — <strong>модель GEO Hub</strong> (EN‑продукт, B2B‑уклон).</p>
+            <div class="content-table" role="region" aria-label="Claude — география и возраст, модель">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Срез</th>
+                    <th>Доля аудитории, % (модель)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Северная Америка</td>
+                    <td><strong>48–58 %</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Европа + UK</td>
+                    <td><strong>22–32 %</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Азия и прочие</td>
+                    <td><strong>15–25 %</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Возраст 25–44</td>
+                    <td><strong>52–64 %</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Возраст 45+</td>
+                    <td><strong>14–26 %</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="content-note"><strong>Источники:</strong> нет открытой разбивки Anthropic; коридоры — <strong>модель GEO Hub</strong> на фоне типичных IT/white‑collar когорт.</p>
+            <div class="content-table" role="region" aria-label="Claude — доходы ЦА $/год, модель">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Личный доход пользователя (США/UK, ориентир)</th>
+                    <th>Доля, % (модель)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>&lt; $60k/год</td>
+                    <td><strong>12–22 %</strong></td>
+                  </tr>
+                  <tr>
+                    <td>$60k–100k</td>
+                    <td><strong>28–38 %</strong></td>
+                  </tr>
+                  <tr>
+                    <td>$100k–180k</td>
+                    <td><strong>28–38 %</strong></td>
+                  </tr>
+                  <tr>
+                    <td>&gt; $180k</td>
+                    <td><strong>12–24 %</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>Динамика пользователей по годам (модель)</h3>
+            <p class="content-note"><strong>Источники:</strong> фрагменты из прессы и отраслевых оценок; ряд — <strong>модель GEO Hub</strong>, не отчёт Anthropic.</p>
+            <div class="content-table" role="region" aria-label="Claude — динамика MAU по годам, модель">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Год</th>
+                    <th>MAU, млн (коридор, модель)</th>
+                    <th>К пред. году, % (модель)</th>
+                    <th>Комментарий</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2022</td>
+                    <td><strong>—</strong></td>
+                    <td>—</td>
+                    <td>Массового публичного чата ещё нет.</td>
+                  </tr>
+                  <tr>
+                    <td>2023</td>
+                    <td><strong>4–12</strong></td>
+                    <td>—</td>
+                    <td>Запуск и первые подписки; упор на длинный контекст и «безопасный» бренд.</td>
+                  </tr>
+                  <tr>
+                    <td>2024</td>
+                    <td><strong>8–18</strong></td>
+                    <td><strong>+35–120 %</strong></td>
+                    <td>Расширение тарифов, интеграции для команд.</td>
+                  </tr>
+                  <tr>
+                    <td>2025</td>
+                    <td><strong>10–24</strong></td>
+                    <td><strong>+10–35 %</strong></td>
+                    <td>Конкуренция с ChatGPT/Gemini; сильнее B2B‑контур.</td>
+                  </tr>
+                  <tr>
+                    <td>2026</td>
+                    <td><strong>12–28</strong></td>
+                    <td><strong>+8–25 %</strong></td>
+                    <td>Ниже темпы, чем у «мегачатов»; выше качество монетизации на пользователя.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h2 id="claude-otkuda-kompanii">Откуда Claude берёт компании и документы для ответа</h2>
+            <p>
+              Claude силён в <strong>длинном контексте</strong> и в работе с <strong>файлами, которые подключает пользователь или организация</strong> (проекты, артефакты, корпоративные базы — по тарифу и настройкам). Когда доступен <strong>веб</strong>, к контексту добавляются извлечённые страницы через поисковый слой, но типичный B2B‑сценарий — не «случайный поисковик», а сочетание загруженных документов и политики доступа. Название компании попадает в ответ, если оно явно есть во вложениях или в полученных из сети фрагментах. В отличие от <strong>Perplexity</strong>, это не продукт‑агрегатор ссылок под каждый публичный запрос; в отличие от <strong>Gemini</strong>, нет экосистемы Google Поиска и Карт; в отличие от <strong>Алисы</strong>, нет голосового контура и выдачи Яндекса «рядом со мной». Фактические режимы (веб, коннекторы) сверяйте с актуальными условиями Anthropic.
+            </p>
+
+            <h2 id="claude-zachem-brendu">Почему бренду важно учитывать Claude</h2>
+            <p>
+              В корпоративных сценариях Claude может участвовать в <strong>подготовке резюме рынка, сравнении поставщиков и черновиках отчётов</strong>. Если о вашей компании нет структурированных фактов в открытом вебе, в ответе чаще окажутся крупные игроки категории.
+            </p>
+
+            <h2 id="claude-rf">Claude в России: использование и заметность</h2>
+            <p class="content-note"><strong>Источники:</strong> статистики РФ у Anthropic нет; оценки — <strong>модель GEO Hub</strong> (B2B/IT/юрконтур). Подтверждение — опросы и CRM.</p>
+            <div class="content-table" role="region" aria-label="Claude в РФ — модель">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Сегмент РФ</th>
+                    <th>Пользовали Claude ≥1 раз за 90 дней, % (модель)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Все интернет‑пользователи 15+</td>
+                    <td><strong>2–6 %</strong></td>
+                  </tr>
+                  <tr>
+                    <td>IT и продукт</td>
+                    <td><strong>22–42 %</strong></td>
+                  </tr>
+                  <tr>
+                    <td>B2B‑маркетинг, аналитика, консалтинг</td>
+                    <td><strong>12–28 %</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Юристы и финансы (Big4‑класс и крупный бизнес)</td>
+                    <td><strong>8–22 %</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>
+              Массового проникновения у Claude в РФ нет; доступ зависит от региона и оплаты. Для B2B‑бренда контент в цитируемом формате всё равно полезен — часть клиентов может работать в Claude через зарубежные юрлица.
+            </p>
+            <p class="content-note">
+              Не путайте «редко у всех соседей» с «неважно для моей B2B‑воронки» — проверяйте по своей базе лидов и CRM.
+            </p>
+
+            <h2>Как Claude “выбирает”, что считать хорошим источником?</h2>
+            <p>
+              Claude лучше использует материалы, которые легко извлечь и пересказать: вопросные заголовки, точные
+              определения, таблицы критериев и раздел “когда не подходит”. Чем меньше двусмысленности и больше
+              проверяемых фактов, тем выше шанс, что ваш текст станет “готовым ответом”.
+            </p>
+
+            <h2>Какие запросы Claude чаще всего “закрывает” — и какой формат даёт больше цитируемости?</h2>
+            <p class="content-note"><strong>Источники:</strong> практика GEO/AEO; <strong>не статистика Anthropic</strong> по частотам запросов.</p>
+            <div class="content-table" role="region" aria-label="Интенты и форматы для Claude">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Какой запрос/интент</th>
+                    <th>Лучший формат ответа</th>
+                    <th>Почему AI это подхватывает</th>
+                    <th>Как оформить на сайте</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>«Что это такое?»</td>
+                    <td>Definition + TL;DR</td>
+                    <td>Определение — готовый фрагмент, который легко пересказать без потери смысла.</td>
+                    <td>1–2 предложения определения → TL;DR → “когда применять/не применять”.</td>
+                  </tr>
+                  <tr>
+                    <td>«В чём разница?», «A vs B»</td>
+                    <td>Сравнение + таблица критериев</td>
+                    <td>Критерии выбора дают ясный вывод и снижают двусмысленность.</td>
+                    <td>Таблица → сценарии → ограничения → итог “что выбрать”.</td>
+                  </tr>
+                  <tr>
+                    <td>«Почему это работает?»</td>
+                    <td>Тезисы + доказательства</td>
+                    <td>Связка “утверждение → условие → доказательство” выглядит проверяемо и цитируемо.</td>
+                    <td>Блоки “Вывод/Условие/Доказательство” + кейсы/цифры.</td>
+                  </tr>
+                  <tr>
+                    <td>«Как сделать правильно?»</td>
+                    <td>How‑to + чеклист</td>
+                    <td>Шаги и критерии готовности легко превращаются в инструкцию.</td>
+                    <td>Короткий ответ → шаги → “что должно получиться” → ошибки.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p class="content-note">
+              Для Claude сильнее всего работают страницы с точными определениями, критериями выбора и явными ограничениями.
+              Чем меньше противоречий и больше проверяемых атрибутов (цифры, сроки, условия), тем выше шанс стать “источником”.
+            </p>
+
+            <h2>Какие страницы лучше всего работают для AI‑цитирования?</h2>
+            <ul>
+              <li>Definition pages (“Что такое …?”) с коротким TL;DR.</li>
+              <li>How‑to страницы (“Как сделать …?”) с шагами и чеклистом.</li>
+              <li>Сравнения (“… vs …”) с таблицей различий и сценариями выбора.</li>
+              <li>Examples/кейсы с цифрами, сроками и условиями.</li>
+            </ul>
+
+            <h2>Какие trust‑signals нужно добавить, чтобы AI увереннее называл бренд?</h2>
+            <ul>
+              <li>Кейсы с метриками “до/после”.</li>
+              <li>Эксперты: страница “кто делает” + опыт + публикации.</li>
+              <li>Повторяемые факты о продукте: 3–5 тезисов без противоречий.</li>
+              <li>Внешние упоминания и обзоры (гостевые статьи, каталоги, рейтинги).</li>
+            </ul>
+
+            <h2>Формула «Вывод + Условие + Доказательство» для страниц под Claude</h2>
+            <ul>
+              <li><strong>Вывод:</strong> Claude лучше повторяет структурированные ответы.</li>
+              <li><strong>Условие:</strong> Если на странице есть таблицы/шаги и указаны ограничения.</li>
+              <li><strong>Доказательство:</strong> Один и тот же тезис подтверждён кейсом и повторён в FAQ/сравнении.</li>
+            </ul>
+
+            <h2>Мини‑чеклист: что сделать за 7 дней</h2>
+            <ol>
+              <li>10 вопросных H2 под запросы аудитории.</li>
+              <li>10 коротких ответов (60–120 слов) + таблица критериев выбора.</li>
+              <li>2 сравнения (vs) + 1 кейс с цифрами.</li>
+              <li>Перелинковка: методы → сравнения → кейсы → FAQ.</li>
+            </ol>
+
+            <h2>FAQ: Claude и цитируемость</h2>
+            <div class="faq-list" role="region" aria-label="Вопросы и ответы: Claude">
+              <details>
+                <summary>Что Claude цитирует охотнее всего?</summary>
+                <p>
+                  Короткие прямые ответы под вопросными H2, затем критерии/таблица, ограничения и подтверждающие факты (кейс/цифры).
+                  Чем проще извлечь “готовую цитату”, тем выше шанс, что она попадёт в ответ.
+                </p>
+              </details>
+              <details>
+                <summary>Нужно ли писать “когда не подходит”?</summary>
+                <p>
+                  Да. Блок “когда не подходит” уменьшает риск неправильной рекомендации и делает документ точнее — это повышает доверие
+                  и вероятность использования как источника.
+                </p>
+              </details>
+              <details>
+                <summary>Какие сигналы доверия важнее: автор или кейсы?</summary>
+                <p>
+                  Они работают вместе: автор/эксперт объясняет “почему верить”, а кейсы доказывают “что это работает”.
+                  На ключевых страницах желательно иметь и блок экспертизы, и 1–2 доказательных примера.
+                </p>
+              </details>
+              <details>
+                <summary>Как избежать противоречий в терминологии?</summary>
+                <p>
+                  Зафиксируйте 3–5 определений и тезисов и повторяйте их одинаково на всех страницах кластера. Если меняется формулировка,
+                  обновляйте связанные страницы одновременно, чтобы не было “двух версий правды”.
+                </p>
+              </details>
+              <details>
+                <summary>Нужно ли делать отдельные страницы под интенты?</summary>
+                <p>
+                  Да: “что это”, “как сделать”, “сравнение”, “кейсы”, “FAQ”. Тогда Claude (и другие answer engines) проще извлекают нужный
+                  документ под конкретный вопрос.
+                </p>
+              </details>
+            </div>
+
+            <div class="content-related">
+              <h3>Связанные страницы</h3>
+              <ul>
+                <li><a href="../methods/aeo.html">AEO оптимизация</a></li>
+                <li><a href="../methods/methods-guide.html">Методы продвижения — обзор</a></li>
+                <li><a href="platform-comparison.html">Сравнение нейроплатформ</a></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"></footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

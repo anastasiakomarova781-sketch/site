@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Что такое SKU — простыми словами, примеры и как использовать (2026)</title>
+    <meta
+      name="description"
+      content="SKU (Stock Keeping Unit): что это такое, чем отличается от штрихкода и артикула, примеры для e‑commerce и 5 правил хорошего SKU. Таблица, FAQ и чеклист."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Jura:wght@300..700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="canonical" href="/blog/sku.html" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="../index.html" class="logo">
+          <img src="../Img/logo-aeo.png" alt="AEO logo" class="logo-image" />
+        </a>
+        <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </header>
+
+    <div class="drawer-backdrop" data-drawer-close hidden></div>
+    <aside class="mobile-drawer" id="site-drawer" aria-label="Меню" aria-hidden="true">
+      <div class="mobile-drawer__header">
+        <span class="mobile-drawer__title">Меню</span>
+        <button class="mobile-drawer__close" type="button" data-drawer-close aria-label="Закрыть меню">×</button>
+      </div>
+      <nav class="drawer-nav" aria-label="Навигация сайта">
+        <details class="nav-dd" open>
+          <summary>Методы</summary>
+          <div class="nav-dd-panel" role="menu">
+            <a role="menuitem" href="../methods/methods-guide.html">Методы продвижения — обзор</a>
+            <a role="menuitem" href="../methods/geo.html">GEO оптимизация</a>
+            <a role="menuitem" href="../methods/aeo.html">AEO оптимизация</a>
+            <a role="menuitem" href="../methods/seo.html">SEO оптимизация</a>
+            <a role="menuitem" href="../methods/aio.html">AIO оптимизация</a>
+            <a role="menuitem" href="../methods/ai-smm.html">AI &amp; SMM стратегии</a>
+            <a role="menuitem" href="../methods/faq-methods.html">FAQ по методам</a>
+          </div>
+        </details>
+
+        <details class="nav-dd" open>
+          <summary>Нейроплатформы</summary>
+          <div class="nav-dd-panel" role="menu">
+            <a role="menuitem" href="../neural-platforms/chatgpt.html">ChatGPT</a>
+            <a role="menuitem" href="../neural-platforms/perplexity.html">Perplexity</a>
+            <a role="menuitem" href="../neural-platforms/deepseek.html">DeepSeek</a>
+            <a role="menuitem" href="../neural-platforms/yandex-alice.html">Яндекс Алиса</a>
+            <a role="menuitem" href="../neural-platforms/platform-comparison.html">Сравнение платформ</a>
+          </div>
+        </details>
+
+        <details class="nav-dd" open>
+          <summary>Инструменты</summary>
+          <div class="nav-dd-panel" role="menu">
+            <a role="menuitem" href="../tools/analytics.html">Аналитика и аудит</a>
+            <a role="menuitem" href="../tools/content-factory.html">Контент‑завод</a>
+          </div>
+        </details>
+
+        <details class="nav-dd" open>
+          <summary>Стратегия</summary>
+          <div class="nav-dd-panel" role="menu">
+            <a role="menuitem" href="../strategy/overview.html">Общий обзор</a>
+            <a role="menuitem" href="../strategy/unified-system.html">Единая система</a>
+            <a role="menuitem" href="../strategy/ai-contextual.html">AI и контекст</a>
+          </div>
+        </details>
+
+        <details class="nav-dd" open>
+          <summary>Отрасли</summary>
+          <div class="nav-dd-panel" role="menu">
+            <a role="menuitem" href="../case-studies/all-industries-geo-aeo.html">Все отрасли и нейропоиск</a>
+            <a role="menuitem" href="../case-studies/marketplaces-neuro-strategy.html">Маркетплейсы</a>
+            <a role="menuitem" href="../case-studies/clinics-neuro-strategy.html">Клиники</a>
+            <a role="menuitem" href="../case-studies/service-centers-neuro-strategy.html">Сервисные центры</a>
+            <a role="menuitem" href="../case-studies/showrooms-neuro-strategy.html">Шоурумы</a>
+            <a role="menuitem" href="../case-studies/beauty-neuro-strategy.html">Салоны красоты</a>
+            <a role="menuitem" href="../case-studies/delivery-neuro-strategy.html">Доставка</a>
+            <a role="menuitem" href="../case-studies/corporations.html">Кейсы больших корпораций</a>
+            <a role="menuitem" href="../case-studies/ecommerce.html">Кейсы e‑commerce</a>
+            <a role="menuitem" href="../case-studies/saas.html">Кейсы SaaS и digital</a>
+            <a role="menuitem" href="../case-studies/local-business.html">Кейсы локального бизнеса</a>
+            <a role="menuitem" href="../case-studies/ai-discovery.html">AI‑discovery лидеры</a>
+          </div>
+        </details>
+        <a class="drawer-link" href="../blog/main.html">БЛОГ</a>
+
+      </nav>
+    </aside>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h1>Что такое SKU</h1>
+            <p class="section-subtitle">
+              SKU (Stock Keeping Unit) — это внутренний идентификатор товарной позиции: «какой именно вариант товара мы продаём и учитываем».
+              Ниже — простое определение, примеры и правила, как сделать SKU удобным для склада, магазина и аналитики.
+            </p>
+          </div>
+
+          <article class="content-article">
+            <h2>SKU простыми словами — это что?</h2>
+            <p>
+              <strong>SKU</strong> — это код, который однозначно обозначает конкретную товарную единицу (вариант товара) в вашей системе учёта:
+              например, «футболка белая, размер M» — это отдельный SKU, а «та же футболка, размер L» — другой SKU.
+            </p>
+
+            <h2>Зачем нужен SKU в интернет‑магазине и на складе?</h2>
+            <ul>
+              <li><strong>Учёт остатков</strong>: сколько единиц каждого варианта есть на складе/в магазине.</li>
+              <li><strong>Продажи</strong>: что именно покупают (цвет/размер/комплектация) и что приносит маржу.</li>
+              <li><strong>Логистика</strong>: сборка заказов без ошибок (pick/pack).</li>
+              <li><strong>Возвраты</strong>: понятно, что возвращают и что нужно вернуть на склад.</li>
+              <li><strong>Синхронизация</strong>: связка каталога с ERP/CRM/маркетплейсами.</li>
+            </ul>
+
+            <h2>SKU, штрихкод и артикул — в чём разница?</h2>
+            <div class="content-table" role="region" aria-label="SKU vs штрихкод vs артикул">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Термин</th>
+                    <th>Что это</th>
+                    <th>Кто задаёт</th>
+                    <th>Где используется</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>SKU</td>
+                    <td>Внутренний код товарной позиции (варианта)</td>
+                    <td>Вы (магазин/склад)</td>
+                    <td>Учёт, склад, аналитика, интеграции</td>
+                  </tr>
+                  <tr>
+                    <td>Штрихкод (EAN/UPC)</td>
+                    <td>Стандартизированный идентификатор для сканирования</td>
+                    <td>Производитель/стандарт</td>
+                    <td>Касса, логистика, розница, маркетплейсы</td>
+                  </tr>
+                  <tr>
+                    <td>Артикул</td>
+                    <td>Обозначение модели/серии (часто у производителя)</td>
+                    <td>Чаще производитель</td>
+                    <td>Каталог, прайсы, документы</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p class="content-note">
+              Один товар может иметь и артикул, и штрихкод, и SKU. Главное: <strong>SKU — это ваш внутренний «ключ»</strong>, который вы контролируете
+              и можете строить так, чтобы он был удобен вашим процессам.
+            </p>
+
+            <h2>Примеры SKU</h2>
+            <ul>
+              <li><code>TSH-WHT-M</code> — футболка (TSH), белая (WHT), размер M.</li>
+              <li><code>CRM-DENT-12M</code> — подписка CRM для стоматологий на 12 месяцев.</li>
+              <li><code>LEG-BLK-XS-HI</code> — леггинсы, чёрные, XS, высокая посадка.</li>
+              <li><code>KIT-STARTER-RU</code> — стартовый набор (локализация RU).</li>
+            </ul>
+
+            <h2>5 правил хорошего SKU</h2>
+            <ol>
+              <li><strong>Уникальность</strong>: один SKU = один вариант товара.</li>
+              <li><strong>Стабильность</strong>: не переиспользуйте SKU для другого товара.</li>
+              <li><strong>Читаемость</strong>: код должен быть понятен людям (хотя бы частично).</li>
+              <li><strong>Ограниченная длина</strong>: обычно 8–20 символов достаточно.</li>
+              <li><strong>Единый формат</strong>: одинаковые правила разделителей и сокращений (например, через дефис).</li>
+            </ol>
+
+            <h2>FAQ</h2>
+            <h3>SKU должен совпадать со штрихкодом?</h3>
+            <p>Нет. SKU — внутренний идентификатор. Штрихкод — внешний стандарт для сканирования. Иногда их связывают, но это разные сущности.</p>
+
+            <h3>Можно ли менять SKU?</h3>
+            <p>Лучше избегать. Изменение SKU часто ломает связки в интеграциях, аналитике и истории заказов. Если нужно — делайте миграцию с алиасами.</p>
+
+            <h3>SKU нужен, если товаров мало?</h3>
+            <p>Да, если вы планируете рост или продаёте варианты (размер/цвет/комплект). SKU дисциплинирует каталог и снижает ошибки в заказах.</p>
+
+            <div class="content-related">
+              <h3>Связанные страницы</h3>
+              <ul>
+                <li><a href="../tools/analytics.html">Аналитика и аудит</a></li>
+                <li><a href="../tools/content-factory.html#checklists">Чеклисты</a></li>
+                <li><a href="../strategy/ai-contextual.html">Как нейросети используют контент</a></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-main">
+          <div class="footer-links">
+            <a href="../about.html">Компания</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>(/) © 2026</p>
+          <div class="footer-meta">
+            <a href="#" data-popup="privacy">Политика конфиденциальности</a>
+            <a href="#" data-popup="consent">Согласие на обработку данных</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal-overlay" id="site-modal" hidden>
+      <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" aria-label="Закрыть">×</button>
+        <h3 id="modal-title"></h3>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
+

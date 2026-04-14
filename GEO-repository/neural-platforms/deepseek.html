@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Продвижение в DeepSeek (2026) — как подготовить страницы под вопросные запросы</title>
+    <meta
+      name="description"
+      content="DeepSeek лучше находит структурированные ответы. Как подготовить страницы: H2‑вопросы, answer‑first, таблицы факторов, доказательства и перелинковка."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Jura:wght@300..700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="canonical" href="/neural-platforms/deepseek.html" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="../index.html" class="logo">
+          <img src="../Img/logo-aeo.png" alt="GEO logo" class="logo-image" />
+        </a>
+        <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h1>Продвижение в DeepSeek</h1>
+            <p class="section-subtitle">
+              DeepSeek лучше “видит” страницы, где заголовки совпадают с вопросом пользователя и где ответ дан сразу,
+              структурировано и с доказательствами.
+            </p>
+          </div>
+
+          <article class="content-article">
+            <h2 id="deepseek-chto-eto">Что такое DeepSeek</h2>
+            <p>
+              <strong>DeepSeek</strong> — китайская AI‑компания и одноимённый продукт: собственные <strong>большие языковые модели</strong>, <strong>веб‑чат</strong> и <strong>API</strong> для пересказов, кода, учёбы, сравнений и правки текстов; часть версий выходит с <strong>открытыми весами</strong>, а конкурентная цена API делает сервис популярным среди разработчиков. Для бизнеса важно помнить: это коммерческий оператор из КНР — <strong>условия использования, данные и доступность API</strong> нужно сверять только с актуальной политикой <strong>DeepSeek</strong> и договором.
+            </p>
+
+            <h2 id="deepseek-auditoriya">Аудитория DeepSeek: цифры и модель</h2>
+            <p class="content-note">
+              Все <strong>доли ниже в процентах (%)</strong> от указанной базы (запросы, сессии, цена). У таблиц — примечания с <strong>источниками</strong>; где нет открытой отчётности DeepSeek, используется <strong>модель GEO Hub</strong>.
+            </p>
+            <div class="content-sources" role="region" aria-labelledby="deepseek-sources-title">
+              <h3 class="content-sources__title" id="deepseek-sources-title">Источники цифр в этом разделе</h3>
+              <p>
+                <strong>Легенда:</strong> ссылки ниже — <strong>проверяемые внешние материалы</strong>; MAU веб‑чата, доли запросов, география и динамика в таблицах (кроме явно помеченных строк) — <strong>модель GEO Hub</strong>, согласованная с порядком величин из СМИ и веб‑аналитики.
+              </p>
+              <ul class="content-sources__list">
+                <li>
+                  <strong>Официальной сквозной отчётности DeepSeek</strong> (MAU/гео/API в одном открытом файле) в публичном доступе обычно нет — таблицы не являются выгрузкой из кабинета оператора.
+                </li>
+                <li>
+                  <strong>Публикация (география трафика сайта):</strong> распределение <strong>desktop</strong>‑трафика <strong>deepseek.com</strong> по странам (июль 2025), в т.ч. <strong>Россия 7,54 %</strong> —
+                  <a href="https://www.statista.com/statistics/1556986/deepseek-global-web-traffic-share-by-country/" rel="noopener noreferrer">Statista</a>
+                  (в карточке указан источник: <strong>SimilarWeb</strong>, период июль 2025). Суммарные визиты за июль 2025 приведены в том же материале Statista.
+                </li>
+                <li>
+                  <strong>Контекст всплеска трафика:</strong> разбор по данным Similarweb —
+                  <a href="https://www.similarweb.com/blog/insights/ai-news/deepseek-explodes-on-the-ai-scene-challenging-chatgpt/" rel="noopener noreferrer">Similarweb Blog — DeepSeek traffic</a>;
+                  панель по домену:
+                  <a href="https://www.similarweb.com/website/deepseek.com/" rel="noopener noreferrer">Similarweb — deepseek.com</a>
+                  (методология панели ≠ MAU в нашей таблице без пересчёта).
+                </li>
+                <li>
+                  <strong>Сравнение цен API</strong> — по публичным прайсам OpenAI, Anthropic, Google и др. на момент подготовки страницы; пересчитывайте при смене тарифов.
+                </li>
+                <li>
+                  <strong>Коридоры MAU, доли IT/мобайл, география «Прочие», динамика, сегменты РФ</strong> (кроме строк с пометкой «публикация» в подразделе РФ) — <strong>модель GEO Hub</strong>.
+                </li>
+              </ul>
+            </div>
+            <p class="content-note"><strong>Источники:</strong> публичные новости и комментарии к всплескам трафика 2025; оценки трафика (Similarweb и аналоги); сравнения прайсов API у поставщиков. Сводка — <strong>модель GEO Hub</strong>, не регламент DeepSeek.</p>
+            <div class="content-table" role="region" aria-label="DeepSeek — масштаб и API">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Показатель</th>
+                    <th>Значение (ориентир)</th>
+                    <th>Комментарий</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>MAU веб‑чата, глобально (после пиков роста)</td>
+                    <td><strong>40–120 млн</strong> (широкий коридор)</td>
+                    <td>Сильные колебания после релизов; API и зеркала дают параллельный трафик.</td>
+                  </tr>
+                  <tr>
+                    <td>Доля запросов из IT/код/учёба (модель)</td>
+                    <td><strong>45–65 %</strong> от запросов</td>
+                    <td>Выше, чем у среднего consumer‑чата.</td>
+                  </tr>
+                  <tr>
+                    <td>Цена API vs западные LLM (модель скидки)</td>
+                    <td><strong>на 30–80 %</strong> ниже за 1M токенов на аналогичном классе задач (оценка)</td>
+                    <td>Цифры зависят от тарифа и валюты; сравнивайте еженедельно.</td>
+                  </tr>
+                  <tr>
+                    <td>Доля мобильного трафика (модель)</td>
+                    <td><strong>50–65 %</strong> сессий</td>
+                    <td>Студенты и Азия тянут мобайл вверх.</td>
+                  </tr>
+                  <tr>
+                    <td>Средняя длина сессии, мин (модель)</td>
+                    <td><strong>12–28 мин</strong></td>
+                    <td>Длиннее при код‑ревью и «пошаговых» задачах.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <figure class="pct-chart" role="group" aria-label="Доли в процентах: IT/учёба и мобильные сессии. Высота столбца — середина модельного коридора, шкала до 70 %.">
+              <p class="pct-chart__caption">Визуализация долей в % (не минуты и не скидка API): высота столбца ≈ середина коридора; шкала 0–70 %.</p>
+              <p class="pct-chart__scale"><span>0 %</span><span>70 %</span></p>
+              <div class="pct-chart__cols">
+                <div class="pct-chart__col">
+                  <div class="pct-chart__track"><span class="pct-chart__fill" style="--pct-mid: 55; --pct-scale: 70"></span></div>
+                  <span class="pct-chart__label">IT/код/учёба</span>
+                </div>
+                <div class="pct-chart__col">
+                  <div class="pct-chart__track"><span class="pct-chart__fill" style="--pct-mid: 57.5; --pct-scale: 70"></span></div>
+                  <span class="pct-chart__label">Мобильный трафик</span>
+                </div>
+              </div>
+            </figure>
+            <p class="content-note"><strong>Источники:</strong> публичной детальной географии у DeepSeek мало; проценты — <strong>модель GEO Hub</strong> (КНР + диаспора как якорь, остальное — экстраполяция по языкам и трафику). По РФ дополнительно — <strong>Statista / SimilarWeb</strong> (см. ниже).</p>
+            <div class="content-table" role="region" aria-label="DeepSeek — география, модель">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Регион</th>
+                    <th>Доля аудитории, % (модель)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>КНР + диаспора</td>
+                    <td><strong>28–40 %</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Северная Америка</td>
+                    <td><strong>18–28 %</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Европа</td>
+                    <td><strong>12–20 %</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Юго‑Восточная и Южная Азия</td>
+                    <td><strong>15–28 %</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Прочие (в т.ч. РФ, LatAm, Ближний Восток)</td>
+                    <td><strong>10–22 %</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <figure class="pct-chart" role="group" aria-label="География аудитории в процентах по модели. Высота столбца — середина коридора, шкала до 50 %.">
+              <p class="pct-chart__caption">Вертикальные столбцы по регионам: доля аудитории в %, высота ≈ середина коридора; шкала 0–50 %.</p>
+              <p class="pct-chart__scale"><span>0 %</span><span>50 %</span></p>
+              <div class="pct-chart__cols">
+                <div class="pct-chart__col">
+                  <div class="pct-chart__track"><span class="pct-chart__fill" style="--pct-mid: 34"></span></div>
+                  <span class="pct-chart__label">КНР + диаспора</span>
+                </div>
+                <div class="pct-chart__col">
+                  <div class="pct-chart__track"><span class="pct-chart__fill" style="--pct-mid: 23"></span></div>
+                  <span class="pct-chart__label">Сев. Америка</span>
+                </div>
+                <div class="pct-chart__col">
+                  <div class="pct-chart__track"><span class="pct-chart__fill" style="--pct-mid: 16"></span></div>
+                  <span class="pct-chart__label">Европа</span>
+                </div>
+                <div class="pct-chart__col">
+                  <div class="pct-chart__track"><span class="pct-chart__fill" style="--pct-mid: 21.5"></span></div>
+                  <span class="pct-chart__label">Ю‑В и Юж. Азия</span>
+                </div>
+                <div class="pct-chart__col">
+                  <div class="pct-chart__track"><span class="pct-chart__fill" style="--pct-mid: 16"></span></div>
+                  <span class="pct-chart__label">Прочие</span>
+                </div>
+              </div>
+            </figure>
+            <h3>Россия: публичные метрики трафика и оценка пользователей по годам</h3>
+            <p>
+              В глобальной таблице выше Россия входит в «Прочие». Ниже — <strong>отдельный срез по РФ</strong>: сначала метрика из открытых аналитических данных (это
+              <strong>не MAU</strong>, а доля трафика сайта), затем — <strong>оценочный коридор MAU</strong> для РФ и динамика по годам в той же логике, что и глобальная модель MAU на этой странице.
+            </p>
+            <p class="content-note">
+              <strong>Источники:</strong>
+              <a href="https://www.statista.com/statistics/1556986/deepseek-global-web-traffic-share-by-country/" rel="noopener noreferrer">Statista</a>
+              (данные <strong>SimilarWeb</strong>, период наблюдения — июль 2025; в таблице источника указано: распределение <strong>desktop</strong>‑трафика по странам). Суммарные визиты deepseek.com за июль 2025 в материале Statista — порядка <strong>350,5 млн</strong> (desktop и mobile вместе); георазбивка в той же публикации — для desktop.
+            </p>
+            <div class="content-table" role="region" aria-label="DeepSeek — доля трафика из РФ, публичные данные">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Период</th>
+                    <th>Метрика</th>
+                    <th>Россия</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Июль 2025</td>
+                    <td>Доля desktop‑трафика deepseek.com (по стране пользователя)</td>
+                    <td><strong>7,54 %</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="content-note">
+              <strong>Источники и метод:</strong> прямой отчёт DeepSeek по MAU в РФ в открытом доступе отсутствует. Коридоры — <strong>модель GEO Hub</strong>: якорь по масштабу — публичная доля трафика из РФ (июль 2025) и глобальные коридоры MAU; годы до 2025 — ретроспективная экстраполяция порядка величин (мало пользователей до массового релиза).
+            </p>
+            <div class="content-table" role="region" aria-label="DeepSeek — оценка MAU в РФ по годам, модель">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Год</th>
+                    <th>MAU РФ, млн (оценка, модель)</th>
+                    <th>К пред. году, % (модель)</th>
+                    <th>Комментарий</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2022</td>
+                    <td><strong>&lt; 0,05</strong></td>
+                    <td>—</td>
+                    <td>Практически нет массовой аудитории в РФ.</td>
+                  </tr>
+                  <tr>
+                    <td>2023</td>
+                    <td><strong>0,02–0,2</strong></td>
+                    <td><strong>+200–800 %</strong></td>
+                    <td>Узкая tech‑аудитория, новости о моделях.</td>
+                  </tr>
+                  <tr>
+                    <td>2024</td>
+                    <td><strong>0,2–1,2</strong></td>
+                    <td><strong>+150–500 %</strong></td>
+                    <td>Рост интереса до вирусного старта 2025 года.</td>
+                  </tr>
+                  <tr>
+                    <td>2025</td>
+                    <td><strong>5,5–14</strong></td>
+                    <td><strong>+400–2500 %</strong></td>
+                    <td>Пик после релизов; согласуется по порядку с долей РФ в desktop‑трафике сайта <strong>7,54 %</strong> (июль 2025) при глобальном MAU из верхней таблицы.</td>
+                  </tr>
+                  <tr>
+                    <td>2026</td>
+                    <td><strong>4–11</strong></td>
+                    <td><strong>−35–+10 %</strong></td>
+                    <td>Консолидация ниже пика; часть нагрузки на приложения, API и зеркала не полностью отражена веб‑MAU.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <figure class="pct-chart" role="group" aria-label="Оценка MAU DeepSeek в РФ по годам: высота столбца — середина коридора в млн, шкала до 14 млн.">
+              <p class="pct-chart__caption">Оценочные MAU в РФ (млн): высота столбца ≈ середина коридора; шкала 0–14 млн — не проценты.</p>
+              <p class="pct-chart__scale"><span>0</span><span>14 млн</span></p>
+              <div class="pct-chart__cols">
+                <div class="pct-chart__col">
+                  <div class="pct-chart__track"><span class="pct-chart__fill" style="--pct-mid: 0.11; --pct-scale: 14"></span></div>
+                  <span class="pct-chart__label">2023</span>
+                </div>
+                <div class="pct-chart__col">
+                  <div class="pct-chart__track"><span class="pct-chart__fill" style="--pct-mid: 0.7; --pct-scale: 14"></span></div>
+                  <span class="pct-chart__label">2024</span>
+                </div>
+                <div class="pct-chart__col">
+                  <div class="pct-chart__track"><span class="pct-chart__fill" style="--pct-mid: 9.75; --pct-scale: 14"></span></div>
+                  <span class="pct-chart__label">2025</span>
+                </div>
+                <div class="pct-chart__col">
+                  <div class="pct-chart__track"><span class="pct-chart__fill" style="--pct-mid: 7.5; --pct-scale: 14"></span></div>
+                  <span class="pct-chart__label">2026</span>
+                </div>
+              </div>
+            </figure>
+            <p class="content-note"><strong>Источники:</strong> открытой разбивки по возрасту у DeepSeek нет; коридоры — <strong>модель GEO Hub</strong> (профиль студентов и tech).</p>
+            <div class="content-table" role="region" aria-label="DeepSeek — возраст, модель">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Возрастная когорта</th>
+                    <th>Доля, % (модель)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>14–22 года</td>
+                    <td><strong>32–44 %</strong></td>
+                  </tr>
+                  <tr>
+                    <td>23–40 лет</td>
+                    <td><strong>38–50 %</strong></td>
+                  </tr>
+                  <tr>
+                    <td>41+</td>
+                    <td><strong>12–22 %</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <figure class="pct-chart" role="group" aria-label="Возрастные когорты в процентах по модели. Высота столбца — середина коридора, шкала до 50 %.">
+              <p class="pct-chart__caption">Доли по возрасту в %: высота столбца ≈ середина коридора; шкала 0–50 %.</p>
+              <p class="pct-chart__scale"><span>0 %</span><span>50 %</span></p>
+              <div class="pct-chart__cols">
+                <div class="pct-chart__col">
+                  <div class="pct-chart__track"><span class="pct-chart__fill" style="--pct-mid: 38"></span></div>
+                  <span class="pct-chart__label">14–22</span>
+                </div>
+                <div class="pct-chart__col">
+                  <div class="pct-chart__track"><span class="pct-chart__fill" style="--pct-mid: 44"></span></div>
+                  <span class="pct-chart__label">23–40</span>
+                </div>
+                <div class="pct-chart__col">
+                  <div class="pct-chart__track"><span class="pct-chart__fill" style="--pct-mid: 17"></span></div>
+                  <span class="pct-chart__label">41+</span>
+                </div>
+              </div>
+            </figure>
+            <p class="content-note"><strong>Источники:</strong> нет публичной разбивки DeepSeek по доходам в РФ; коридоры — <strong>модель GEO Hub</strong> (фон — открытая статистика по доходам ЦА в РФ, не выручка сервиса).</p>
+            <div class="content-table" role="region" aria-label="DeepSeek — доход РФ ЦА, модель">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Доход РФ ЦА (₽/мес)</th>
+                    <th>Доля, % (модель)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>&lt; 120k</td>
+                    <td><strong>35–50 %</strong></td>
+                  </tr>
+                  <tr>
+                    <td>120–250k</td>
+                    <td><strong>30–42 %</strong></td>
+                  </tr>
+                  <tr>
+                    <td>&gt; 250k</td>
+                    <td><strong>12–28 %</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <figure class="pct-chart" role="group" aria-label="Доход российской ЦА в процентах по модели. Высота столбца — середина коридора, шкала до 50 %.">
+              <p class="pct-chart__caption">Доли по сегментам дохода в %: высота столбца ≈ середина коридора; шкала 0–50 %.</p>
+              <p class="pct-chart__scale"><span>0 %</span><span>50 %</span></p>
+              <div class="pct-chart__cols">
+                <div class="pct-chart__col">
+                  <div class="pct-chart__track"><span class="pct-chart__fill" style="--pct-mid: 42.5"></span></div>
+                  <span class="pct-chart__label">&lt; 120k</span>
+                </div>
+                <div class="pct-chart__col">
+                  <div class="pct-chart__track"><span class="pct-chart__fill" style="--pct-mid: 36"></span></div>
+                  <span class="pct-chart__label">120–250k</span>
+                </div>
+                <div class="pct-chart__col">
+                  <div class="pct-chart__track"><span class="pct-chart__fill" style="--pct-mid: 20"></span></div>
+                  <span class="pct-chart__label">&gt; 250k</span>
+                </div>
+              </div>
+            </figure>
+
+            <h3>Динамика пользователей по годам (модель)</h3>
+            <p class="content-note"><strong>Источники:</strong> медиа‑ориентиры на всплески 2025; остальное — <strong>ретроспективная модель GEO Hub</strong>. Не квартальная отчётность DeepSeek.</p>
+            <div class="content-table" role="region" aria-label="DeepSeek — динамика MAU по годам, модель">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Год</th>
+                    <th>MAU веб‑чата, млн (коридор, модель)</th>
+                    <th>К пред. году, % (модель)</th>
+                    <th>Комментарий</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2022</td>
+                    <td><strong>0,2–1,2</strong></td>
+                    <td>—</td>
+                    <td>Преимущественно CN/tech‑ранние пользователи.</td>
+                  </tr>
+                  <tr>
+                    <td>2023</td>
+                    <td><strong>3–10</strong></td>
+                    <td><strong>+150–900 %</strong></td>
+                    <td>Рост узнаваемости бренда моделей.</td>
+                  </tr>
+                  <tr>
+                    <td>2024</td>
+                    <td><strong>12–28</strong></td>
+                    <td><strong>+80–220 %</strong></td>
+                    <td>Международное использование, ценовое давление на рынок API.</td>
+                  </tr>
+                  <tr>
+                    <td>2025</td>
+                    <td><strong>70–160</strong></td>
+                    <td><strong>+120–400 %</strong></td>
+                    <td>Вирусные волны после релизов; перегрузки и ограничения доступа.</td>
+                  </tr>
+                  <tr>
+                    <td>2026</td>
+                    <td><strong>40–120</strong></td>
+                    <td><strong>−45–+15 %</strong></td>
+                    <td>Консолидация ниже пика; часть нагрузки на API и партнёрские оболочки.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h2 id="deepseek-otkuda-kompanii">Откуда DeepSeek берёт компании и сайты для ответа</h2>
+            <p>
+              Пользовательский чат DeepSeek сочетает генерацию с возможностью опоры на <strong>свежий веб</strong> в тех режимах, где включён поиск (реализация зависит от клиента и версии): модель не индексирует интернет сама, а получает <strong>подмножество страниц и сниппетов</strong>, которые передал поисковый/ретриверный слой. Названия брендов и «кого порекомендовать» чаще следуют из обзоров, сравнений, таблиц характеристик и tech‑медиа. В отличие от <strong>Perplexity</strong>, акцент на постоянном блоке внешних ссылок в каждом ответе менее предсказуем; в отличие от <strong>Gemini</strong>, нет связки с индексом Google; в отличие от <strong>Алисы</strong>, нет контура <strong>Яндекса</strong> и локальных карточек. Юрисдикция и политика данных оператора (КНР) отличаются от западных продуктов — учитывайте это в комплаенсе.
+            </p>
+
+            <h2 id="deepseek-zachem-brendu">Почему бренду важно учитывать DeepSeek</h2>
+            <p>
+              Часть вашей аудитории может получать <strong>сравнения товаров, подборки и объяснения</strong> именно через DeepSeek (особенно в ценочувствительных и tech‑сегментах). Если о бренде нет ясных страниц‑ответов и внешних подтверждений, модель чаще обобщает «как в среднем по рынку» без вашего названия.
+            </p>
+
+            <h2 id="deepseek-rf">DeepSeek в России: как пользуются и насколько популярен</h2>
+            <p>
+              В 2024–2026 гг. DeepSeek неоднократно фигурировал в медиа как быстрорастущий игрок. Ниже — <strong>модель проникновения</strong> (не официальная статистика компании).
+            </p>
+            <p class="content-note"><strong>Источники:</strong> нет публичной статистики DeepSeek по РФ; оценки — <strong>модель GEO Hub</strong> (IT/студенческие когорты). Валидация — опросы и мониторинг.</p>
+            <div class="content-table" role="region" aria-label="DeepSeek в РФ — модель">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Сегмент РФ</th>
+                    <th>Использовали DeepSeek ≥1 раз за 90 дней, % (модель)</th>
+                    <th>Регулярно (≥8 сессий/мес), % (модель)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Все интернет‑пользователи 15+</td>
+                    <td><strong>6–14 %</strong></td>
+                    <td><strong>1,5–4 %</strong></td>
+                  </tr>
+                  <tr>
+                    <td>IT, разработка, DevOps</td>
+                    <td><strong>42–68 %</strong></td>
+                    <td><strong>18–38 %</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Digital‑маркетинг, аналитика</td>
+                    <td><strong>28–48 %</strong></td>
+                    <td><strong>8–22 %</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Студенты STEM</td>
+                    <td><strong>22–40 %</strong></td>
+                    <td><strong>6–16 %</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>
+              Для <strong>B2B, EdTech, digital‑продуктов и IT‑аутсорса</strong> доля вопросов через DeepSeek обычно заметнее, чем в офлайн‑ритейле. Уточняйте промпт‑мониторингом и опросами клиентов.
+            </p>
+            <p class="content-note">
+              Юридические и комплаенс‑риски при использовании зарубежных и китайских AI‑сервисов для персональных данных оценивайте отдельно с юристом.
+            </p>
+
+            <h2>Как писать заголовки, чтобы DeepSeek находил страницу по запросу?</h2>
+            <p>
+              Делайте H2 в виде реального запроса: “Как настроить GEO для интернет‑магазина в 2026 году?”,
+              “Как измерять цитируемость в нейросетях?”. Сразу под H2 — короткий ответ, затем список и таблица.
+            </p>
+
+            <h2>Какие запросы DeepSeek лучше всего понимает — и какой формат ответа ему “удобен”?</h2>
+            <p class="content-note"><strong>Источники:</strong> практика GEO/AEO и наблюдение за ответами; <strong>не API‑статистика</strong> DeepSeek.</p>
+            <div class="content-table" role="region" aria-label="Интенты и форматы для DeepSeek">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Какой запрос/интент</th>
+                    <th>Лучший формат ответа</th>
+                    <th>Почему AI это подхватывает</th>
+                    <th>Как оформить на сайте</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>«Как …?», «пошагово»</td>
+                    <td>How‑to + шаги</td>
+                    <td>Вопросный заголовок совпадает с запросом, а шаги легко извлекаются.</td>
+                    <td>H2‑вопрос → короткий ответ → шаги → ограничения → FAQ.</td>
+                  </tr>
+                  <tr>
+                    <td>«Что такое …?»</td>
+                    <td>Definition + TL;DR</td>
+                    <td>Определение — готовая цитата, TL;DR — быстрый “сниппет”.</td>
+                    <td>Определение 1–2 предложения + TL;DR + “когда применять/не применять”.</td>
+                  </tr>
+                  <tr>
+                    <td>«A vs B», «в чём разница?»</td>
+                    <td>Vs‑таблица</td>
+                    <td>Сравнение по критериям даёт чёткий вывод и уменьшает неоднозначность.</td>
+                    <td>Таблица различий + сценарии + итог “когда что”.</td>
+                  </tr>
+                  <tr>
+                    <td>«Почему не работает?»</td>
+                    <td>Ошибки + причины</td>
+                    <td>Причинно‑следственные блоки легко пересказываются и цитируются.</td>
+                    <td>Список ошибок → симптомы → как исправить → чеклист.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p class="content-note">
+              Для DeepSeek критично совпадение формулировки запроса и H2‑вопроса, а также “извлекаемость” ответа:
+              короткий абзац, таблица/шаги, ограничения и доказательства. Тогда страница становится документом‑ответом для retrieval.
+            </p>
+
+            <h2>Какая структура страницы лучше всего читается DeepSeek?</h2>
+            <ol>
+              <li>H2‑вопрос → 1 абзац ответа.</li>
+              <li>TL;DR списком.</li>
+              <li>Таблица факторов/критериев.</li>
+              <li>Ограничения + примеры.</li>
+              <li>FAQ + связанные страницы.</li>
+            </ol>
+
+            <h2>Почему “Вывод + Условие + Доказательство” помогает ранжированию?</h2>
+            <p><strong>Вывод:</strong> структурированные утверждения легче цитировать.</p>
+            <p><strong>Условие:</strong> если вы добавляете ограничения и контекст применения.</p>
+            <p><strong>Доказательство:</strong> кейсы, цифры, таблицы и проверяемые факты.</p>
+
+            <h2>FAQ: DeepSeek и структурированные ответы</h2>
+            <div class="faq-list" role="region" aria-label="Вопросы и ответы: DeepSeek">
+              <details>
+                <summary>Какие заголовки DeepSeek понимает лучше всего?</summary>
+                <p>
+                  Те, что повторяют реальную формулировку запроса пользователя: “как…”, “что…”, “почему…”, “A vs B”.
+                  Под заголовком сразу нужен короткий ответ, а дальше — шаги/таблица.
+                </p>
+              </details>
+              <details>
+                <summary>Нужно ли добавлять ограничения и “когда не подходит”?</summary>
+                <p>
+                  Да. Ограничения уменьшают двусмысленность и делают ответ точным. Это повышает шанс, что AI процитирует
+                  ваш фрагмент, а не “соберёт” ответ из разных источников.
+                </p>
+              </details>
+              <details>
+                <summary>Что важнее: длинный текст или структурные блоки?</summary>
+                <p>
+                  Структура. DeepSeek выигрывает на “извлекаемых” блоках: короткий абзац‑ответ, таблица критериев/факторов,
+                  список шагов, FAQ, затем доказательства (кейс/цифры).
+                </p>
+              </details>
+              <details>
+                <summary>Какая схема страницы даёт лучший эффект?</summary>
+                <p>
+                  H1 → краткий лид → TOC → серия H2‑вопросов → answer‑first абзацы → таблицы/шаги → ограничения → FAQ → “Читайте также”.
+                  На этом сайте часть блоков добавляется автоматически.
+                </p>
+              </details>
+              <details>
+                <summary>Как часто обновлять контент под AI‑поиск?</summary>
+                <p>
+                  Минимум раз в 1–2 месяца для ключевых страниц: обновить даты, примеры, цифры, инструменты и внутренние ссылки.
+                  Это поддерживает актуальность и повышает доверие к документу.
+                </p>
+              </details>
+            </div>
+
+            <div class="content-related">
+              <h3>Связанные страницы</h3>
+              <ul>
+                <li><a href="../strategy/ai-contextual.html">Как AI использует контент</a></li>
+                <li><a href="../tools/analytics.html">Аналитика</a></li>
+                <li><a href="platform-comparison.html">Сравнение платформ</a></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-main">
+          <div class="footer-links">
+            <a href="../about.html">Компания</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>(/) © 2026</p>
+          <div class="footer-meta">
+            <a href="#" data-popup="privacy">Политика конфиденциальности</a>
+            <a href="#" data-popup="consent">Согласие на обработку данных</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal-overlay" id="site-modal" hidden>
+      <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" aria-label="Закрыть">×</button>
+        <h3 id="modal-title"></h3>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

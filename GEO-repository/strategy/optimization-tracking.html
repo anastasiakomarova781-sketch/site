@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Оптимизация: как отслеживать результат AI‑видимости через время</title>
+    <meta
+      name="description"
+      content="Оптимизация AI‑видимости — это контроль эффекта после внедрений: промпт‑сеты, доля голоса, цитирование URL, воронка и алерты. Как часто мерить и что считать успехом."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Jura:wght@300..700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="canonical" href="/strategy/optimization-tracking.html" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="../index.html" class="logo">
+          <img src="../Img/logo-aeo.png" alt="AEO logo" class="logo-image" />
+        </a>
+        <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </header>
+
+    <div class="drawer-backdrop" data-drawer-close hidden></div>
+    <aside class="mobile-drawer" id="site-drawer" aria-label="Меню" aria-hidden="true">
+      <div class="mobile-drawer__header">
+        <span class="mobile-drawer__title">Меню</span>
+        <button class="mobile-drawer__close" type="button" data-drawer-close aria-label="Закрыть меню">×</button>
+      </div>
+      <nav class="drawer-nav" aria-label="Навигация сайта">
+        <details class="nav-dd" open>
+          <summary>Методы</summary>
+          <div class="nav-dd-panel" role="menu">
+            <a role="menuitem" href="../methods/methods-guide.html">Методы продвижения — обзор</a>
+            <a role="menuitem" href="../methods/geo.html">GEO оптимизация</a>
+            <a role="menuitem" href="../methods/aeo.html">AEO оптимизация</a>
+            <a role="menuitem" href="../methods/seo.html">SEO оптимизация</a>
+            <a role="menuitem" href="../methods/aio.html">AIO оптимизация</a>
+            <a role="menuitem" href="../methods/ai-smm.html">AI &amp; SMM стратегии</a>
+            <a role="menuitem" href="../methods/faq-methods.html">FAQ по методам</a>
+          </div>
+        </details>
+
+        <details class="nav-dd" open>
+          <summary>Нейроплатформы</summary>
+          <div class="nav-dd-panel" role="menu">
+            <a role="menuitem" href="../neural-platforms/chatgpt.html">ChatGPT</a>
+            <a role="menuitem" href="../neural-platforms/perplexity.html">Perplexity</a>
+            <a role="menuitem" href="../neural-platforms/deepseek.html">DeepSeek</a>
+            <a role="menuitem" href="../neural-platforms/yandex-alice.html">Яндекс Алиса</a>
+            <a role="menuitem" href="../neural-platforms/platform-comparison.html">Сравнение платформ</a>
+          </div>
+        </details>
+
+        <details class="nav-dd" open>
+          <summary>Инструменты</summary>
+          <div class="nav-dd-panel" role="menu">
+            <a role="menuitem" href="../tools/analytics.html">Аналитика и аудит</a>
+            <a role="menuitem" href="../tools/content-factory.html">Контент‑завод</a>
+          </div>
+        </details>
+
+        <details class="nav-dd" open>
+          <summary>Стратегия</summary>
+          <div class="nav-dd-panel" role="menu">
+            <a role="menuitem" href="overview.html">Общий обзор</a>
+            <a role="menuitem" href="unified-system.html">Единая система</a>
+            <a role="menuitem" href="ai-contextual.html">AI и контекст</a>
+          </div>
+        </details>
+
+        <details class="nav-dd" open>
+          <summary>Отрасли</summary>
+          <div class="nav-dd-panel" role="menu">
+            <a role="menuitem" href="../case-studies/all-industries-geo-aeo.html">Все отрасли и нейропоиск</a>
+            <a role="menuitem" href="../case-studies/marketplaces-neuro-strategy.html">Маркетплейсы</a>
+            <a role="menuitem" href="../case-studies/clinics-neuro-strategy.html">Клиники</a>
+            <a role="menuitem" href="../case-studies/service-centers-neuro-strategy.html">Сервисные центры</a>
+            <a role="menuitem" href="../case-studies/showrooms-neuro-strategy.html">Шоурумы</a>
+            <a role="menuitem" href="../case-studies/beauty-neuro-strategy.html">Салоны красоты</a>
+            <a role="menuitem" href="../case-studies/delivery-neuro-strategy.html">Доставка</a>
+            <a role="menuitem" href="../case-studies/corporations.html">Кейсы больших корпораций</a>
+            <a role="menuitem" href="../case-studies/ecommerce.html">Кейсы e‑commerce</a>
+            <a role="menuitem" href="../case-studies/saas.html">Кейсы SaaS и digital</a>
+            <a role="menuitem" href="../case-studies/local-business.html">Кейсы локального бизнеса</a>
+            <a role="menuitem" href="../case-studies/ai-discovery.html">AI‑discovery лидеры</a>
+          </div>
+        </details>
+
+        <a class="drawer-link" href="../blog/main.html">БЛОГ</a>
+      </nav>
+    </aside>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h1>Оптимизация: трекаем результат</h1>
+            <p class="section-subtitle">
+              Оптимизация — это контроль эффекта после внедрений. AI‑сигналы меняются не мгновенно: нужно время, повторяемые замеры и
+              правильные метрики.
+            </p>
+          </div>
+
+          <article class="content-article">
+            <h2>Что именно мы трекаем</h2>
+            <ul>
+              <li><strong>Доля голоса</strong>: как часто AI рекомендует вас vs конкурентов по тем же промптам.</li>
+              <li><strong>Цитирование</strong>: какие URL и бренды AI приводит как источники.</li>
+              <li><strong>Сценарии</strong>: в каких интентах вы появляются (выбор/сравнение/инструкция/альтернативы).</li>
+              <li><strong>Качество ответа</strong>: верность фактов, корректность названий, “правильные” преимущества.</li>
+              <li><strong>Воронка</strong>: рост бренд‑поиска, переходы, конверсии с AI‑трафика (если он отслеживается).</li>
+            </ul>
+
+            <h2>Когда ожидать эффект</h2>
+            <div class="content-table" role="region" aria-label="Сроки эффекта AI-видимости">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Тип изменений</th>
+                    <th>Когда видим первые сигналы</th>
+                    <th>Когда фиксируем устойчивость</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Статьи / FAQ / критерии</td>
+                    <td>1–3 недели</td>
+                    <td>4–8 недель</td>
+                  </tr>
+                  <tr>
+                    <td>Сайт / страницы продукта</td>
+                    <td>1–4 недели</td>
+                    <td>6–12 недель</td>
+                  </tr>
+                  <tr>
+                    <td>Внешние источники (медиа/обзоры)</td>
+                    <td>2–6 недель</td>
+                    <td>8–16 недель</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h2>Как строим контроль: “промпт‑сеты”</h2>
+            <ol>
+              <li><strong>Фиксируем набор запросов</strong> (20–50) и делим по интентам.</li>
+              <li><strong>Замеряем базу</strong>: ответы, источники, конкурентов, долю голоса.</li>
+              <li><strong>Внедряем изменения</strong> (соц/контент/код) и помечаем дату релиза.</li>
+              <li><strong>Повторяем замер</strong> по тому же набору, сравниваем “до/после”.</li>
+              <li><strong>Делаем алерты</strong> на критичные изменения (например, исчез бренд, изменилась формулировка, подменились факты).</li>
+            </ol>
+
+            <h2>Что считаем успехом</h2>
+            <ul>
+              <li><strong>Вы появились</strong> в целевых сценариях (и удерживаетесь там по времени).</li>
+              <li><strong>AI правильно описывает</strong> продукт и преимущества, без ошибок.</li>
+              <li><strong>Растёт доля голоса</strong> в сравнении с конкурентами.</li>
+              <li><strong>Увеличивается цитирование</strong> ваших опорных URL (гайды/страницы продукта/FAQ).</li>
+            </ul>
+
+            <div class="content-related">
+              <h3>Связанные страницы</h3>
+              <ul>
+                <li><a href="ai-visibility-analytics.html">Аналитика AI‑видимости</a></li>
+                <li><a href="implementation-changes.html">Реализация: какие изменения внедряем</a></li>
+                <li><a href="../methods/geo.html">Метод: GEO оптимизация</a></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"></footer>
+    <script src="../script.js"></script>
+  </body>
+</html>
+
