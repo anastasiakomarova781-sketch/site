@@ -72,6 +72,9 @@ a {
   font-weight: 600;
   line-height: 1.35;
   text-align: left;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
   transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
 }
 
@@ -560,6 +563,11 @@ a {
 }
 
 @media (max-width: 960px) {
+  html,
+  body {
+    overflow-x: clip;
+  }
+
   .article-page-layout {
     grid-template-columns: 1fr;
   }
@@ -594,26 +602,25 @@ a {
   }
 
   details.article-sidebar-acc {
+    position: relative;
     border-radius: 16px;
-    border: 1px solid rgba(17, 111, 235, 0.35);
-    background: rgba(15, 23, 42, 0.6);
-    box-shadow:
-      0 18px 48px rgba(0, 0, 0, 0.18),
-      0 0 0 1px rgba(17, 111, 235, 0.08);
-    overflow: clip;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    overflow: visible;
   }
 
   details.article-sidebar-acc > summary.article-sidebar-acc__summary {
     list-style: none;
     cursor: default;
     user-select: none;
-    padding: 0.9rem 1.05rem;
+    padding: 0;
     font-weight: 800;
     letter-spacing: 0.02em;
     color: rgba(248, 250, 252, 0.96);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     gap: 0.75rem;
   }
 
@@ -622,7 +629,7 @@ a {
   }
 
   .article-sidebar-acc__label {
-    min-width: 0;
+    display: none;
   }
 
   .article-sidebar-acc__toggle {
@@ -630,25 +637,26 @@ a {
     width: 42px;
     height: 42px;
     border-radius: 999px;
-    border: 1px solid rgba(148, 163, 184, 0.3);
-    background: rgba(2, 6, 23, 0.2);
+    border: 1px solid rgba(17, 111, 235, 0.75);
+    background: rgba(17, 111, 235, 0.92);
     cursor: pointer;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 14px 30px rgba(2, 6, 23, 0.28);
   }
 
   .article-sidebar-acc__toggle::before {
-    content: "▾";
-    color: rgba(224, 242, 254, 0.95);
-    transform: rotate(-90deg);
+    content: "⋯";
+    color: rgba(248, 250, 252, 0.98);
+    transform: none;
     transition: transform 0.18s ease;
     line-height: 1;
-    font-size: 1.05rem;
+    font-size: 1.4rem;
   }
 
   details.article-sidebar-acc[open] .article-sidebar-acc__toggle::before {
-    transform: rotate(0deg);
+    transform: none;
   }
 
   .article-sidebar-acc__toggle:focus-visible {
@@ -657,10 +665,30 @@ a {
   }
 
   .article-sidebar-acc__panel {
-    padding: 0 0.9rem 0.95rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(100% + 0.55rem);
+    z-index: 30;
+    padding: 0.95rem 0.95rem 1.05rem;
     display: flex;
     flex-direction: column;
     gap: 0.65rem;
+    border-radius: 16px;
+    border: 1px solid rgba(17, 111, 235, 0.35);
+    background: linear-gradient(
+      165deg,
+      rgba(30, 58, 138, 0.38) 0%,
+      rgba(15, 23, 42, 0.94) 42%,
+      rgba(15, 23, 42, 0.82) 100%
+    );
+    box-shadow:
+      0 18px 48px rgba(0, 0, 0, 0.34),
+      0 0 0 1px rgba(17, 111, 235, 0.12),
+      0 28px 72px rgba(17, 111, 235, 0.18);
+    max-height: min(70vh, 520px);
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   /* Внутренний вид боковой панели (с консультацией + рейлом) */
